@@ -1,10 +1,4 @@
 <html>
-
-<h1>{{ $title }}</h1>
-
-@foreach($visitors as $visitor)
-<h1>{{ $visitor->name }}</h1>
-<p>{{ $visitor->comments }}</p>
-@endforeach
-
+@extends('layouts.app')
+@section('title', 'Welcome to the sign it visitor book')
 </html>

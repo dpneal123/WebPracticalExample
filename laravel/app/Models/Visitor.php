@@ -9,5 +9,5 @@ class Visitor extends Model
 {
     use HasFactory;
 
-
+    protected $fillable = ['name', 'comments'];
 }
