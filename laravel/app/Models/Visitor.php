@@ -10,4 +10,9 @@ class Visitor extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'comments'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
