@@ -14,6 +14,7 @@
             @enderror
         </div>
         <button type="submit" class="btn btn-blue">Create</button>
+        <a class="btn" href="{{ route('visitors.index') }}">Back</a>
     </form>
 
 @endsection

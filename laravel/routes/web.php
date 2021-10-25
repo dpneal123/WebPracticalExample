@@ -23,3 +23,8 @@ Route::resource('/visitors', VisitorController::class);
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/login', [LoginController::class, 'authenticate'])->name('authenticate');
 
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
+Route::get('/register', [LoginController::class, 'create'])->name('register');
+Route::post('/register', [LoginController::class, 'store'])->name('storeUser');
+

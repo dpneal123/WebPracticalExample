@@ -16,9 +16,11 @@
             <li><a href="/">Home</a></li>
             @if (Auth::guest())
                 <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
             @else
                 <li><a href="/visitors">Visitors</a></li>
                 <li><a href="/visitors/create">Sign the guestbook</a></li>
+                <li><a href="/logout">Log Out</a></li>
             @endif
         </ul>
     </div>
@@ -27,7 +29,7 @@
     <div class="container mx-auto"><h2>@yield('title')</h2></div>
 </section>
 <section class="content">
-    <div class="container mx-auto">            @yield('content')</div>
+    <div class="container mx-auto">@yield('content')</div>
 </section>
 </body>
 </html>
